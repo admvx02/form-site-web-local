@@ -1,7 +1,7 @@
 # How to run OpnForm in Local Server
 
 <p align="center">
-<img src="https://github.com/JhumanJ/OpnForm/blob/main/public/img/social-preview.jpg?raw=true">
+<img src="opnform.png">
 </p>
 
 ### Requirements
