@@ -18,44 +18,48 @@ OpnForm is a standard web application built with:
 
 ### Docker installation 🐳
 1. Make sure to check Virtual Machine Platform and Windows Subsystem for Linux first
+   - When you have checked both of them, Restart your PC/Laptop
+   <p align="left">
+   <img src="windows.png">
+   </p>
    
-1. Install  [Docker](https://docs.docker.com/desktop/install/windows-install/)
+3. Download and Install  [Docker](https://docs.docker.com/desktop/install/windows-install/)
    - Basically Docker is based on Linux
-2. Open windows PowerShell to update the wsl
+4. Open windows PowerShell to update the wsl
 
 ```
 wsl --update
 ```
 
-3. Get the code
+4. Get the code
    - Clone the project
    
 ```
 https://github.com/beranidigital/form-site-web.git
 ```
 
-4. cd form-site-web
-5. Verify your Docker File
+5. cd form-site-web
+6. Verify your Docker File
    - Open the sample application in your IDE. Note that it already has a Dockerfile. For your own projects you need to create this yourself.
-6. Build your firts Image
+7. Build your firts Image
    - You can build an image using the following docker build command via a CLI in your project folder.
   
 ```
 docker build -t form-site-web .
 ```
 
-7. Running from docker hub
+8. Running from docker hub
 
 ```
 docker run --name opnform -v $PWD/my-opnform-data:/persist -p 80:80 jhumanj/opnform
 ```
 
-8. Run your container
+9. Run your container
    - Once the build is complete, an image will appear in the Images tab. Select the image name to see its details. Select Run to run it as a container. In the Optional settings remember to specify a port number (something like 8080)
      <p align="left">
      <img src="container.png">
      </p>
-9. View the result
+10. View the Frontend
    - You now have a running container. If you don't have a name for your container, Docker provides one. View your container live by selecting the link below the container's name.
      <p align="left">
      <img src="container2.png">
