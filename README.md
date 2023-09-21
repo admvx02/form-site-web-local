@@ -44,6 +44,9 @@ docker run --name opnform -v $PWD/my-opnform-data:/persist -p 80:80 jhumanj/opnf
 
 7. Run your container
    - Once the build is complete, an image will appear in the Images tab. Select the image name to see its details. Select Run to run it as a container. In the Optional settings remember to specify a port number (something like 8080)
+     <p align="left">
+     <img src="container.png">
+     </p>
 8. View the result
    - You now have a running container. If you don't have a name for your container, Docker provides one. View your container live by selecting the link below the container's name.
 
